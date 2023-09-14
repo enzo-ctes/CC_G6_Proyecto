@@ -1,0 +1,56 @@
+* {
+background-color:white;
+}
+
+body{
+    background-color:gray;
+    padding-left: 11em;
+    margin: 2em;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+}
+#especial {
+    color: rgb(247, 247, 248);/*el nombre es propiedad y el valor se llama peso */  
+    background-color: green;
+    font-size: 18px;
+}
+ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 2em;
+    left: 1em;
+    position: absolute;
+    width: 9em;
+}
+/* h2, p, li{
+    color: blue;
+} */
+.navbar li {
+    width: 100px;
+    background-color: chartreuse;
+}
+.articulo h2 ~ span {
+color: blue;
+}
+.ejemplo{
+    background-color: rgb(17, 244, 248);
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    /*max-width: 500px;
+    min-width: 200px;
+    min-height: 200px;*/
+    height: calc(100vh - 100px);
+}
+/*
+#p{
+    background-color: rgb(17, 244, 248);
+    border: 5px solid red;
+    padding: 10px;
+    border-radius: 5px;
+}*/

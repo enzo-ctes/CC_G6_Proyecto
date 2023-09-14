@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/DeporMLOGO.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SOCIOS</title>
+</head>
+<body>
+    <nav>
+        <ul>    
+            <li><a href="../index.html">Inicio</a></li>
+            <li>Socios</li>        
+            <li><a href="Indumentaria.html">Indumentaria</a></li>
+            <li><a href="contact.html">Conctact</a></li>
+      
+        </ul>
+    </nav>
+    <h1>Bienvenidos a Socios</h1>
+    <div id="imagenSocios">
+        <img src="../img/Boton Socios.png">
+    </div>
+    <!-- <div id="audio">
+        <audio src="../audio/hinchada.mp4" preload="auto" controls autoplay ></audio>
+    </div> -->
+
+    <div id="formulario">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore, ab itaque explicabo quo natus vitae velit optio deserunt, totam in quis ratione ducimus, voluptate excepturi rem magni accusantium cum.</p>
+        <h1>Forumario 450 A</h1>
+        
+        <form action="" method="" >
+            <fieldset>
+            <legend><b> Datos Personales</b></legend>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required maxlength="10"><br><br>
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required><br><br>
+            <label for="">Edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="99"><br><br>
+            <label for="">DNI</label>
+            <input type="number" name="dni" id="dni" min="1000000" max="99000000"><br><br>            
+            <label for="">SEXO</label>
+            <input type="sexo" name="sexo" id="sexo" ><br><br>
+            <select name="sexo" id="selectsexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>                
+                <option value="noBinario">No Binario</option>                
+            </select>
+            <label for="">Adjuntar foto de frente</label>
+            <input type="file" name="adjuntar" id="adjuntar" ><br><br>
+            <label for="">eMail</label>
+            <input type="email" name="email" id="email" ><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Caracteristicas</b></legend>
+            <label for="">Estatura</label>
+            <select name="estatura" id="estatura">
+                <option value="baja">Baja</option>
+                <option value="normal">Normal</option>
+                <option value="alta">Alta</option>
+                <option value="superAlta" disabled>Super-Alta</option>
+            </select> <br><br>
+                <label for="peso">Peso</label>   
+                <input type="number" name="peso" id="peso" placeholder="peso en libras">
+                <label for="peso">Color favorito</label>   
+                <input type="color" name="color" id="color"><br><br>
+                <label for="peso">Observaciones</label>
+                <textarea name="obs" id="obs" cols="30" rows="10" placeholder="aqui coloca si tiene algun tipo de observación"></textarea>   
+        </fieldset>
+        <fieldset>
+            <legend><b>Estudios realizados:</b></legend>
+            <input type="checkbox" name="primaria" id="primaria" value="primaria">
+            <label for="primaria">Primaria</label>
+            <input type="checkbox" name="secundaria" id="secundaria" value="secundaria">
+            <label for="secundaria">Secundaria</label>
+            <input type="checkbox" name="superior" id="superior" value="superior">
+            <label for="superior">Superior</label>
+            <h3>Lenguaje de Programación</h3>
+            <p><b>Elija un solo lenguaje</b></p>
+            <input type="radio" name="lenguaje" id="java">
+            <label for="java">Java</label>
+            <input type="radio" name="lenguaje" id="javaScript">
+            <label for="javaScript">JavaScript</label>
+            <input type="radio" name="lenguaje" id="python">
+            <label for="python">Python</label>
+        </fieldset><br><br>
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <b>Acepto los terminos y condiciones</b>
+        <br><br><br>
+        <button type="submit"><b>Enviar</b></button><br><br>
+        <button type="reset" value="borrar">Borrar</button>
+
+
+
+        </form>
+    
+    </div>
+</body>
+</html>
