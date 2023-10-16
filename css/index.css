@@ -20,7 +20,9 @@ background-color: rgb(25, 138, 55);
 }
 
 img {
-   opacity: 0.7;
+   opacity: 0.9;
+   max-width: 100%;
+   height: auto;
 }    
 
 #imgNoticias {
@@ -35,9 +37,15 @@ img {
  }  
 
 #carouselP  {
-    margin-left: 250px;
-    margin-right: 250px;     
+    margin-left: 20%;
+    /* margin-right: 250px;      */
+    width: 60%;
+  /* height: 50ch; */
     }
+.card-text{
+  color: rgb(25, 25, 25);
+    
+ }  
     
 #conteinerCarouselP {    
     background-color: rgb(89, 156, 89);   
