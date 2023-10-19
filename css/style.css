@@ -3,9 +3,9 @@ background-color:white;
 }
 
 body{
-    background-color:gray;
-    padding-left: 11em;
-    margin: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(80, 184, 233);
+    margin: 0;
 }
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
