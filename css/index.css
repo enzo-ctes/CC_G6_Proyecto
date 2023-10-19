@@ -4,11 +4,12 @@
     
 
 body {
-    background-color:rgb(22, 130, 52);       
+    background-color:rgb(22, 130, 52);  
+    background-color: linear-gradient(to bottom, #ffffff, #00ff00);
 }   
 
 p {
-    color: hsl(0, 14%, 97%);   
+    color: hsl(0, 0%, 0%);   
     text-align: left;
 }   
 
@@ -29,6 +30,10 @@ img {
     width: 100%;
     height: 400px;
  }
+
+hr{
+  border-top: 1px;
+ }
  
  #columMedio {
     margin-top: 2em;
@@ -36,19 +41,20 @@ img {
     margin-bottom: 2em;
  }  
 
-#carouselP  {
-    /* margin-left: 20%; */
-    /* margin-right: 250px;      */
-    /* width: 60%; */
-  /* height: 50ch; */
-    }
+
 .card-text{
   color: rgb(25, 25, 25);
     
  }  
     
 #conteinerCarouselP {    
-    background-color: rgb(89, 156, 89);   
+    background-color: rgb(89, 156, 89);
+   /* width: fit-content;
+   height: fit-content; */
+   /* padding: 0 10% 0 10%; */
+   
+   
+   /* margin-left: 10%; */
     }
 
 .menu-section {
@@ -61,15 +67,21 @@ img {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        background-color: rgb(89, 156, 89); 
+        background-color: #43cc83; 
         /* background: hsl(0, 0%, 15%);     */
     }
+    
+    .accordion-body {
+      background-color: #43cc83;
+    }
+
+  
     
     .menu-simple-menu ul a {
         display: block;
         text-decoration: none;
         /* color: hsl(0, 14%, 97%); */
-        color: hsl(88, 100%, 60%);
+        color: hsl(88, 89%, 15%);
         /* padding: .6em 1em; */
         padding: .6em 1em;
     }
@@ -92,8 +104,9 @@ img {
     .container-xxl {
         /* margin-top:1ch; */
         
-        padding-top: 5ch;
-        background-color: rgb(89, 156, 89); 
+        /* padding-top: 5ch; */
+        /* background-color: rgb(89, 156, 89);  */
+        background-image: linear-gradient(to bottom, #7cd6a6, #1e781e);
         /* background: hsl(0, 0%, 15%);         */
     }
 
