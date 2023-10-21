@@ -21,7 +21,7 @@
                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Intistucional.html">Institucional</a>
+                <a class="nav-link" href="#">Institucional</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,82 +66,116 @@
       
         </ul>
     </nav> -->
-    <h1>Bienvenidos a Socios</h1>
-    <div id="imagenSocios">
-        <img src="../img/Boton Socios.png">
-    </div>
-    <!-- <div id="audio">
-        <audio src="../audio/hinchada.mp4" preload="auto" controls autoplay ></audio>
-    </div> -->
+    <h2 style="color: rgb(3, 56, 3);">¡Asociate Ahora!</h2>
 
-    <div id="formulario">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore, ab itaque explicabo quo natus vitae velit optio deserunt, totam in quis ratione ducimus, voluptate excepturi rem magni accusantium cum.</p>
-        <h1>Forumario 450 A</h1>
+    <h2 style="color: rgb(3, 56, 3);">Registrate</h2>
+        <p></p>
+        <h1></h1>
+
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Elegí tu foto de perfil</title>
+</head>
+<body>
+    <h2>Elegí tu foto de perfil</h2>
+    
+    <!-- Input para cargar una imagen -->
+    <input type="file" id="imagenInput" accept="image/*">
+    
+    <br>
+    
+    <!-- Contenedor de la imagen editable -->
+    <div id="imagenEditable" contenteditable="true" style="border: 2px solid #000; width: 300px; height: 300px;">
+        Arrastra y suelta una imagen aquí o selecciona una imagen desde tu dispositivo.
+    </div>
+    
+    <script>
+        // JavaScript para cargar y mostrar la imagen seleccionada
+        const imagenInput = document.getElementById('imagenInput');
+        const imagenEditable = document.getElementById('imagenEditable');
         
+        imagenInput.addEventListener('change', function() {
+            const archivo = imagenInput.files[0];
+            if (archivo) {
+                const lector = new FileReader();
+                lector.onload = function(e) {
+                    imagenEditable.innerHTML = `<img src="${e.target.result}" style="width: 100%; height: 100%;" alt="Imagen cargada">`;
+                };
+                lector.readAsDataURL(archivo);
+            } else {
+                imagenEditable.innerHTML = "Arrastra y suelta una imagen aquí o selecciona una imagen desde tu dispositivo.";
+            }
+        });
+    </script>
+</body>
+</html>
+
         <form action="" method="" >
             <fieldset>
-            <legend><b> Datos Personales</b></legend>
+            <h2 style="color: rgb(3, 56, 3);">Datos Personales</h2>
             <label for="">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required maxlength="10"><br><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="20"><br><br>
             <label for="">Apellido</label>
             <input type="text" name="apellido" id="apellido" required><br><br>
+            <label for="">Mail</label>
+            <input type="text" name="mail" id="mail" required><br><br>
             <label for="">Edad</label>
             <input type="number" name="edad" id="edad" min="18" max="99"><br><br>
             <label for="">DNI</label>
-            <input type="number" name="dni" id="dni" min="1000000" max="99000000"><br><br>            
-            <label for="">SEXO</label>
-            <input type="sexo" name="sexo" id="sexo" ><br><br>
+            <input type="number" name="dni" id="dni" min="1000000" max="99000000"><br><br>          
+            <label for="">Sexo</label>
             <select name="sexo" id="selectsexo">
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>                
-                <option value="noBinario">No Binario</option>                
+                <option value="noBinario">No Binario</option><br><br>           
             </select>
-            <label for="">Adjuntar foto de frente</label>
-            <input type="file" name="adjuntar" id="adjuntar" ><br><br>
-            <label for="">eMail</label>
-            <input type="email" name="email" id="email" ><br><br>
+            </fieldset>
+            <fieldset>
+            <h2 style="color: rgb(3, 56, 3);">Estudios realizados:</h2>
+                <input type="checkbox" name="primaria" id="primaria" value="primaria">
+                <label for="primaria">Primaria</label>
+                <input type="checkbox" name="secundaria" id="secundaria" value="secundaria">
+                <label for="secundaria">Secundaria</label>
+                <input type="checkbox" name="superior" id="superior" value="superior">
+                <label for="superior">Superior</label>
+            </select>
         </fieldset>
         <fieldset>
-            <legend><b>Caracteristicas</b></legend>
-            <label for="">Estatura</label>
-            <select name="estatura" id="estatura">
-                <option value="baja">Baja</option>
-                <option value="normal">Normal</option>
-                <option value="alta">Alta</option>
-                <option value="superAlta" disabled>Super-Alta</option>
-            </select> <br><br>
-                <label for="peso">Peso</label>   
-                <input type="number" name="peso" id="peso" placeholder="peso en libras">
-                <label for="peso">Color favorito</label>   
-                <input type="color" name="color" id="color"><br><br>
-                <label for="peso">Observaciones</label>
-                <textarea name="obs" id="obs" cols="30" rows="10" placeholder="aqui coloca si tiene algun tipo de observación"></textarea>   
+          <h2 style="color: rgb(3, 56, 3);">Actividad que desea realizar</h2>
+            <input type="checkbox" name="Natación" id="Natación" value="Natación">
+            <label for="primaria">Natación</label>
+            <input type="checkbox" name="Futbol" id="Futbol" value="Futbol">
+            <label for="secundaria">Futbol</label>
+            <input type="checkbox" name="Jockey" id="Jockey" value="Jockey">
+            <label for="superior">Jockey</label>
+            <input type="checkbox" name="Voleibol" id="Voleibol" value="Voleibol">
+            <label for="secundaria">Voleibol</label>
+            <input type="checkbox" name="Patín" id="Patín" value="Patín">
+            <label for="superior">Patín</label>
+          </select>
         </fieldset>
-        <fieldset>
-            <legend><b>Estudios realizados:</b></legend>
-            <input type="checkbox" name="primaria" id="primaria" value="primaria">
-            <label for="primaria">Primaria</label>
-            <input type="checkbox" name="secundaria" id="secundaria" value="secundaria">
-            <label for="secundaria">Secundaria</label>
-            <input type="checkbox" name="superior" id="superior" value="superior">
-            <label for="superior">Superior</label>
-            <h3>Lenguaje de Programación</h3>
-            <p><b>Elija un solo lenguaje</b></p>
-            <input type="radio" name="lenguaje" id="java">
-            <label for="java">Java</label>
-            <input type="radio" name="lenguaje" id="javaScript">
-            <label for="javaScript">JavaScript</label>
-            <input type="radio" name="lenguaje" id="python">
-            <label for="python">Python</label>
-        </fieldset><br><br>
+        <h2 style="color: rgb(3, 56, 3);">Membresía</h2>
+        <select name="Membresia" id="selectMembresia">
+            <option value="Plata">Plata</option>
+            <option value="Bronce">Bronce</option>                
+            <option value="Oro">Oro</option><br><br> 
+          </select>
+        </fieldset>
+        <fieldset> 
+       <br><br><br>         
         <input type="checkbox" name="condiciones" id="condiciones">
         <b>Acepto los terminos y condiciones</b>
         <br><br><br>
         <button type="submit"><b>Enviar</b></button><br><br>
-        <button type="reset" value="borrar">Borrar</button>
 
-
-
+        <div id="imagenSocios">
+          <img src="../img/SOCIOS FIN.jpg">
+      </div>
+      <!-- <div id="audio">
+          <audio src="../audio/hinchada.mp4" preload="auto" controls autoplay ></audio>
+      </div> -->
+  
         </form>
     
     </div>
