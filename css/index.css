@@ -2,10 +2,16 @@
     background-color:rgb(22, 130, 52);
 } */
     
-
+nav {
+    background: #5ea326;
+    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+    
+}
 body {
-    background-color:rgb(22, 130, 52);  
-    background-color: linear-gradient(to bottom, #ffffff, #00ff00);
+    /* background-color:rgb(22, 130, 52);   */
+    /* background-color: linear-gradient(to bottom, #ffffff, #00ff00); */
 }   
 
 p {
@@ -14,7 +20,7 @@ p {
 }   
 
 header  {
-background-color: rgb(25, 138, 55);
+/* background-color: rgb(25, 138, 55); */
 /* width: 50%; */
  margin-left: 200px; 
  margin-right: 200px; 
@@ -48,9 +54,10 @@ hr{
  }  
     
 #conteinerCarouselP {    
-    background-color: rgb(89, 156, 89);
-   /* width: fit-content;
-   height: fit-content; */
+   /* background-color: rgb(89, 156, 89); */
+   background: radial-gradient(circle farthest-corner at center center, #419d4e 0%, #159859 80%);
+   width: fit-content;
+   height: fit-content;
    /* padding: 0 10% 0 10%; */
    
    
@@ -67,7 +74,8 @@ hr{
         list-style-type: none;
         padding: 0;
         margin: 0;
-        background-color: #43cc83; 
+        /* background-color: #43cc83;  */
+        background: radial-gradient(circle farthest-corner at center center, #419d4e 0%, #159859 80%);
         /* background: hsl(0, 0%, 15%);     */
     }
     
@@ -102,12 +110,8 @@ hr{
         text-align: center;
     }
     .container-xxl {
-        /* margin-top:1ch; */
-        
-        /* padding-top: 5ch; */
-        /* background-color: rgb(89, 156, 89);  */
-        background-image: linear-gradient(to bottom, #7cd6a6, #1e781e);
-        /* background: hsl(0, 0%, 15%);         */
+       
+        /* background: radial-gradient(circle farthest-corner at center center, #419d4e 0%, #159859 80%);      */
     }
 
 
