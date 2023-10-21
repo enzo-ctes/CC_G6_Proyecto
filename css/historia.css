@@ -1,9 +1,19 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(80, 184, 233);
-    margin: 0;
-}
+    background: #5ea326;
+    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
 
+    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(80, 184, 233);
+    margin: 0; */
+}
+nav {
+    background: #5ea326;
+    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+    
+}
 .cabecera {
     background-color: rgb(38, 185, 129);
 }
