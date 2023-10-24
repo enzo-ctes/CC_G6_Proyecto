@@ -1,0 +1,20 @@
+body {
+    background: #5ea326;
+    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+}   
+
+h2{
+    color:rgb(3, 56, 3);
+}
+
+nav {
+    background: #5ea326;
+    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+    
+}
+
+title {
+    color: black;
+}
