@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     position: relative;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding-bottom: 3em;
 }
   
@@ -43,6 +43,22 @@ title {
     margin-bottom: 15px;
 }
 
+.containerMedio {
+  display: flex;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+}
+
+#imagenSocios{
+ width: 20px;
+ height: 20px;
+ margin-left: -300px;
+ margin-top: 50px;
+}
+
 .form-group label {
     display: inline-block;
     font-weight: bold;
@@ -52,7 +68,8 @@ title {
 
 .form-group input[type="text"],
 .form-group input[type="number"],
-.form-group input[type="email"], 
+.form-group input[type="email"],
+.form-group input[type="fechaNacimiento"],  
 .form-group select {
     width: 100%;
     padding: 10px;
