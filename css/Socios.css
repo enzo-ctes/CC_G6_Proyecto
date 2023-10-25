@@ -1,11 +1,17 @@
 body {
+    font-family: Arial, sans-serif;
     background: #5ea326;
     background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
-}   
-
-h2{
-    color:rgb(3, 56, 3);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
 }
+  
 
 nav {
     background: #5ea326;
@@ -13,8 +19,136 @@ nav {
     background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
     background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
     
+} 
+
+h2{
+    color:rgb(3, 56, 3);
 }
+
 
 title {
     color: black;
 }
+
+.formulario {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: left; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"], 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #b8bbbc;
+    box-shadow: 0 2px 4px rgba(27, 25, 25, 0.1);
+}
+
+.form-group input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: #b8bbbc;
+   
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 1 em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* Estilos generales del nav */
+
+@media (max-width: 768px) {
+  
+    body {
+      font-size: 14px; 
+    }
+  
+    .navbar-nav .nav-link {
+      padding: .5rem 1rem; 
+    }
+  
+    
+  }
+  
+  
+  @media (max-width: 480px) {
+    
+    body {
+      font-size: 12px; 
+    }
+  
+    .navbar-toggler {
+      display: block; 
+    }
+  
+    .navbar-collapse {
+      display: none; 
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #007bff; 
+    }
+  
+    .navbar-toggler:focus {
+      outline: none; 
+    }
+  
+    .navbar-collapse.show {
+      display: block; 
+    }
+  
+   
+  }
