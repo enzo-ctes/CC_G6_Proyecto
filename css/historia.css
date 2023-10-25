@@ -168,13 +168,13 @@ img {
     }
 
     .footer {
-        margin-top: 1790px;
+        margin-top: 1510px;
         background-color: #5ea326;
         text-align: center;
-        padding: 0em;
+        padding: 0px;
         width: 100%;
-        position: relative;
-        clear: both;
+        position:relative;
+        
     }
 }
 
