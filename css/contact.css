@@ -1,145 +1,147 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #5ea326;
-    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 3em;
+  font-family: Arial, sans-serif;
+  background: #5ea326;
+  background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 3em;
 }
-  
+
 
 nav {
-    background: #5ea326;
-    background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
-    
+  background: #5ea326;
+  background: radial-gradient(circle farthest-corner at center center, #199c2c 0%, #159859 80%);
+  background: -webkit-radial-gradient(circle farthest-corner at center center, #1dd3b9 0%, #0d871798 80%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #048d79 0%, #15982d 80%);
+  
 }
 h1{
-    
-    text-shadow: #b8bbbc};
+  
+  text-shadow: #b8bbbc};
 
 h2{
-    color: white;
+  color: white;
 }
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .form-group {
-    margin-bottom: 20px;
-    text-align: center;
-   
+  margin-bottom: 20px;
+  text-align: center;
+ 
 }
 .form-group label {
-    display: flex;
-    margin-bottom: 5px;
-    
-    
+  display: flex;
+  margin-bottom: 5px;
+  
+  
 }
 .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #b8bbbc; 
-    box-shadow: 0 2px 4px rgba(27, 25, 25, 0.1);
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #b8bbbc; 
+  box-shadow: 0 2px 4px rgba(27, 25, 25, 0.1);
+
   
-    
 }
 .form-group textarea {
-    resize: vertical;
+  resize: vertical;
 }
 .form-group button {
-    background-color: #17478f;
-    color: white;
-    padding:  15px 15px 15px; 
-   border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-   
+  background-color: #17478f;
+  color: white;
+  padding:  15px 15px 15px; 
+ border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+ 
 }
 .form-group button:hover {
-    background-color: #330c61;
-    transition: all 0.3s ease;
+  background-color: #330c61;
+  transition: all 0.3s ease;
 }
 .form-group input:hover{
-    border-color:#17478f ;
-    border-width: 2px;
+  border-color:#17478f ;
+  border-width: 2px;
 }
 a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 footer {
-    color: white;
-    text-align: center;
-    padding: 1 em;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 1 em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 footer ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 footer ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 footer a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 
 
 @media (max-width: 768px) {
-  
-  body {
-    font-size: 14px; 
-  }
 
-  .navbar-nav .nav-link {
-    padding: .5rem 1rem; 
-  }
+body {
+  font-size: 14px; 
+}
 
-  
+.navbar-nav .nav-link {
+  padding: .5rem 1rem; 
+}
+footer {
+  position: relative;
+}
+
 }
 
 
 @media (max-width: 480px) {
-  
-  body {
-    font-size: 12px; 
-  }
 
-  .navbar-toggler {
-    display: block; 
-  }
+body {
+  font-size: 12px; 
+}
 
-  .navbar-collapse {
-    display: none; 
-  }
+.navbar-toggler {
+  display: block; 
+}
 
-  .navbar-toggler-icon {
-    background-color: #007bff; 
-  }
+.navbar-collapse {
+  display: none; 
+}
 
-  .navbar-toggler:focus {
-    outline: none; 
-  }
+.navbar-toggler-icon {
+  background-color: #007bff; 
+}
 
-  .navbar-collapse.show {
-    display: block; 
-  }
+.navbar-toggler:focus {
+  outline: none; 
+}
 
- 
+.navbar-collapse.show {
+  display: block; 
+}
+
+
 }
