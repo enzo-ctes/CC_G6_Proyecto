@@ -7,53 +7,44 @@
     <link rel="shortcut icon" href="../img/DeporMLOGO.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Socios.css">
     <title>SOCIOS</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../img/DeporMLOGO.ico" alt="Logo" width="73" height="70" class="d-inline-block align-text-top">               
-              </a>        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/DeporMLOGO.ico" alt="Logo" width="73" height="70" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Institucional</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Noticias
-                </a>                
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Actualidad</a></li>
-                  <li><a class="dropdown-item" href="#">Proximas fechas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Equipo</a></li>
-                </ul>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link active" href="Socios.html">Socios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Indumentaria.html">Indumentaria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Socios</a>
-              </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Intistucional.html">Institucional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Socios.html">Socios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Indumentaria.html">Indumentaria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submitt">Buscar</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
+
 
 
 
@@ -66,26 +57,21 @@
       
         </ul>
     </nav> -->
-    <h2 style="color: rgb(3, 56, 3);">¡Asociate Ahora!</h2>
-
-    <h2 style="color: rgb(3, 56, 3);">Registrate</h2>
-        <p></p>
-        <h1></h1>
-
-        <!DOCTYPE html>
-<html>
-<head>
-    <title>Elegí tu foto de perfil</title>
-</head>
-<body>
-    <h2>Elegí tu foto de perfil</h2>
-    
+    <h1 style="color: rgb(3, 56, 3);">¡Asociate Ahora!</h1>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Elegí tu foto de perfil</title>
+    </head>
+    <body>
+        <h2>Elegí tu foto de perfil</h2>
+        
+        <br>
+    <!-- Contenedor de la imagen editable -->
+    <div id="imagenEditable" contenteditable="true" style="border: 2px solid #000; width: 300px; height: 300px; ">
+      <img src="../img/SILUETA.jpg" width="300px" height="300px" alt="../img/SILUETA.png">
+        </div>
     <br>
-<!-- Contenedor de la imagen editable -->
-<div id="imagenEditable" contenteditable="true" style="border: 2px solid #000; width: 300px; height: 300px; ">
-  <img src="../img/SILUETA.jpg" width="300px" height="300px" alt="../img/SILUETA.png">
-    </div>
-<br>
     <script>
         // JavaScript para cargar y mostrar la imagen seleccionada
         const imagenInput = document.getElementById('imagenInput');
@@ -110,77 +96,108 @@
     <input type="file" id="imagenInput" accept="image/*">
     
 
-        <form action="" method="" >
-            <fieldset>
-            <h2 style="color: rgb(3, 56, 3);">Datos Personales</h2>
-            <label for="">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required maxlength="20"><br><br>
-            <label for="">Apellido</label>
-            <input type="text" name="apellido" id="apellido" required><br><br>
-            <label for="">Mail</label>
-            <input type="text" name="mail" id="mail" required><br><br>
-            <label for="">Edad</label>
-            <input type="number" name="edad" id="edad" min="18" max="99"><br><br>
-            <label for="">DNI</label>
-            <input type="number" name="dni" id="dni" min="1000000" max="99000000"><br><br>          
-            <label for="">Sexo</label>
-            <select name="sexo" id="selectsexo">
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>                
-                <option value="noBinario">No Binario</option><br><br>           
-            </select>
-            </fieldset>
-            <fieldset>
-            <h2 style="color: rgb(3, 56, 3);">Estudios realizados:</h2>
-                <input type="checkbox" name="primaria" id="primaria" value="primaria">
-                <label for="primaria">Primaria</label>
-                <input type="checkbox" name="secundaria" id="secundaria" value="secundaria">
-                <label for="secundaria">Secundaria</label>
-                <input type="checkbox" name="superior" id="superior" value="superior">
-                <label for="superior">Superior</label>
-            </select>
-        </fieldset>
-        <fieldset>
-          <h2 style="color: rgb(3, 56, 3);">Actividad que desea realizar</h2>
-            <input type="checkbox" name="Natación" id="Natación" value="Natación">
-            <label for="primaria">Natación</label>
-            <input type="checkbox" name="Futbol" id="Futbol" value="Futbol">
-            <label for="secundaria">Futbol</label>
-            <input type="checkbox" name="Jockey" id="Jockey" value="Jockey">
-            <label for="superior">Jockey</label>
-            <input type="checkbox" name="Voleibol" id="Voleibol" value="Voleibol">
-            <label for="secundaria">Voleibol</label>
-            <input type="checkbox" name="Patín" id="Patín" value="Patín">
-            <label for="superior">Patín</label>
+    <form action="" method="" class="">
+      <fieldset class="fieldset-group">
+          <legend class="legend-title">Datos Personales</legend>
+          <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required maxlength="20">
+          </div>
+          <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required>
+          </div>
+          <div class="form-group">
+              <label for="mail">Mail</label>
+              <input type="email" id="mail" name="mail" required>
+          </div>
+          <div class="form-group">
+              <label for="edad">Edad</label>
+              <input type="number" id="edad" name="edad" min="18" max="99">
+          </div>
+          <div class="form-group">
+              <label for="dni">DNI</label>
+              <input type="number" id="dni" name="dni" min="1000000" max="99000000">
+          </div>
+          <div class="form-group">
+              <label for="sexo">Sexo</label>
+              <select id="sexo" name="sexo">
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="noBinario">No Binario</option>
+              </select>
+          </div>
+      </fieldset>
+      
+      <fieldset class="fieldset-group">
+          <legend class="legend-title">Estudios realizados</legend>
+          <div class="form-group">
+              <input type="checkbox" id="primaria" name="primaria" value="primaria">
+              <label for="primaria">Primaria</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="secundaria" name="secundaria" value="secundaria">
+              <label for="secundaria">Secundaria</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="superior" name="superior" value="superior">
+              <label for="superior">Superior</label>
+          </div>
+      </fieldset>
+      
+      <fieldset class="fieldset-group">
+          <legend class="legend-title">Actividad que desea realizar</legend>
+          <div class="form-group">
+              <input type="checkbox" id="natacion" name="natacion" value="natacion">
+              <label for="natacion">Natación</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="futbol" name="futbol" value="futbol">
+              <label for="futbol">Futbol</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="jockey" name="jockey" value="jockey">
+              <label for="jockey">Jockey</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="voleibol" name="voleibol" value="voleibol">
+              <label for="voleibol">Voleibol</label>
+          </div>
+          <div class="form-group">
+              <input type="checkbox" id="patin" name="patin" value="patin">
+              <label for="patin">Patín</label>
+          </div>
+      </fieldset>
+      
+      <div class="form-group">
+          <label for="membresia">Membresía</label>
+          <select id="membresia" name="membresia">
+              <option value="plata">Plata</option>
+              <option value="bronce">Bronce</option>
+              <option value="oro">Oro</option>
           </select>
-        </fieldset>
-        <h2 style="color: rgb(3, 56, 3);">Membresía</h2>
-        <select name="Membresia" id="selectMembresia">
-            <option value="Plata">Plata</option>
-            <option value="Bronce">Bronce</option>                
-            <option value="Oro">Oro</option><br><br> 
-          </select>
-        </fieldset>
-        <fieldset> 
-       <br><br><br>         
-        <input type="checkbox" name="condiciones" id="condiciones">
-        <b>Acepto los terminos y condiciones</b>
-        <br><br><br>
-        <button type="submit"><b>Enviar</b></button><br><br>
-
-        <div id="imagenSocios">
-          <img src="../img/SOCIOS FIN.jpg">
       </div>
-      <!-- <div id="audio">
-          <audio src="../audio/hinchada.mp4" preload="auto" controls autoplay ></audio>
-      </div> -->
-  
-        </form>
-    
-    </div>
+      
+      <div class="form-group">
+          <input type="checkbox" id="condiciones" name="condiciones">
+          <label for="condiciones">Acepto los términos y condiciones</label>
+      </div>
+      
+      <button type="submit">Enviar</button>
+  </form>
+  <footer>
+    <nav id="redes">
+        <ul style="list-style: none;">
+            <li><a href="https://www.instagram.com/mandiyucorrientes/">Instagram</a></li>
+            <li><a href="https://www.twitter.com/mandiyu1952/">Twitter</a></li>
+            <li><a href="https://www.facebook.com/cdmandiyucorrientes/">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@deportivomandiyu?_t=8c4Mt7bDw9d&_r=1">TikTok</a></li>
+            <li><a href="https://www.youtube.com/watch?v=IFKiyksHMAo&ab_channel=Sentatequetecuento">Youtube</a></li>
+        </ul>
+    </nav>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
-
