@@ -53,7 +53,7 @@ title {
 }
 
 #imagenSocios{
- width: 20px;
+ width: 10px;
  height: 20px;
  margin-left: -300px;
  margin-top: 50px;
@@ -136,6 +136,8 @@ footer a {
     .navbar-nav .nav-link {
       padding: .5rem 1rem; 
     }
+
+   
   
     
   }
@@ -146,6 +148,8 @@ footer a {
     body {
       font-size: 12px; 
     }
+
+
   
     .navbar-toggler {
       display: block; 
@@ -167,5 +171,6 @@ footer a {
       display: block; 
     }
   
-   
+
+
   }
