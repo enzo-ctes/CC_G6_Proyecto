@@ -107,6 +107,10 @@ hr {
     background-image: linear-gradient(to bottom, #7cd6a6, #1e781e);
 }
 
+#columMedio  {
+    text-align: justify;
+}
+
 
 @media (max-width: 576px) {
     header, nav, main {
