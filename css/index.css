@@ -111,6 +111,12 @@ hr {
     text-align: justify;
 }
 
+#imgCravero  {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
 
 @media (max-width: 576px) {
     header, nav, main {
@@ -179,6 +185,7 @@ hr {
     .navbar-collapse.show {
       display: block; 
     }
+    
         
 }
 

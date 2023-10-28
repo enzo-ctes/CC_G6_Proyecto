@@ -39,7 +39,7 @@
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submitt">Buscar</button>
+                <button class="btn btn-outline-success" type="submitt"  style="color: white;">Buscar</button>
             </form>
         </div>
     </div>
@@ -60,6 +60,10 @@
                     <fieldset class="fieldset-group">
                         <legend class="legend-title">Datos Personales</legend>
                         <div class="form-group">
+                            <label for="dni">DNI</label>
+                            <input type="number" id="dni" name="dni" min="1000000" max="99000000" placeholder="99.999.999">
+                        </div>
+                        <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" id="nombre" name="nombre" required maxlength="20" placeholder="Ingrese su Nombre">
                         </div>
@@ -68,22 +72,29 @@
                             <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su Apellido" >
                         </div>
                         <div class="form-group">
+                            <label for="fechanacimiento">Fecha Nacimiento</label>
+                            <input type="date" id="fechanacimiento" name="fechanacimiento" style="width: 100%;
+                            padding: 10px;
+                            font-size: 16px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            background-color: #b8bbbc;
+                            box-shadow: 0 2px 4px rgba(27, 25, 25, 0.1);" >
+                        </div>
+                        <div class="form-group">
+                            <label for="celular">Celular</label>
+                            <input type="text" id="celular" name="celular" required placeholder="3794123456">
+                        </div>
+                        <div class="form-group">
                             <label for="mail">Mail</label>
                             <input type="email" id="mail" name="mail" required placeholder="pepito@gmail.com">
                         </div>
-                        <div class="form-group">
-                            <label for="fechaNacimiento">Fecha Nacimiento</label>
-                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" style=" background-color: #b8bbbc;
-                                box-shadow: 0 2px 4px rgba(27, 25, 25, 0.1);width: 100%; padding: 10px;font-size: 16px;">
-                        </div>
+                      
                         <div class="form-group">
                             <label for="edad">Edad</label>
                             <input type="number" id="edad" name="edad" min="18" max="99" placeholder="31">
                         </div>
-                        <div class="form-group">
-                            <label for="dni">DNI</label>
-                            <input type="number" id="dni" name="dni" min="1000000" max="99000000" placeholder="99.999.999">
-                        </div>
+                        
                         <div class="form-group">
                             <label for="sexo">Sexo</label>
                             <select id="sexo" name="sexo">
@@ -132,12 +143,15 @@
                         </div>
                     </fieldset>
                     <div class="form-group">
-                        <label for="membresia">Membresía</label>
+                        <!-- <label for="membresia">Membresía</label>
                         <select id="membresia" name="membresia">
                             <option value="plata">Plata</option>
                             <option value="bronce">Bronce</option>
                             <option value="oro">Oro</option>
-                        </select>          
+                        </select>           -->
+                        <hr>
+                        <br>
+                        A continución para finalizar la solicitud de alta de socio deberá aceptar los terminos y condiciones.
                         <div class="form-group">
                             <input type="checkbox" id="condiciones" name="condiciones">
                             <label for="condiciones">Acepto los términos y condiciones</label>

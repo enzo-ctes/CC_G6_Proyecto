@@ -69,7 +69,8 @@ title {
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group input[type="email"],
-.form-group input[type="fechaNacimiento"],  
+.form-group input[type="fechaNacimiento"],
+/* .form-group input[type="fechanacimiento"], */
 .form-group select {
     width: 100%;
     padding: 10px;
